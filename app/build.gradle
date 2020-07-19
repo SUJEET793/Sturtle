@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.example.android.sturtle"
         minSdkVersion 15
@@ -20,12 +20,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+
+    implementation 'com.android.support:design:25.4.0'
+
+
     /*MIT License
     Copyright (c) 2016 Karol Wrótniak, Droids on Roids
 
@@ -46,12 +49,12 @@ dependencies {
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.*/
-    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     /* rjsvieira/circularView is licensed under the Apache License 2.0
      A permissive license whose main conditions require preservation of copyright and license
      notices. Contributors provide an express grant of patent rights. Licensed works,
      modifications, and larger works may be distributed under different terms and without
      source code.*/
-    compile 'com.github.rjsvieira:circularView:1.1.0'
-    testCompile 'junit:junit:4.12'
+    compile 'com.github.rjsvieira:circularView:1.3.0'
+    testImplementation 'junit:junit:4.12'
 }
