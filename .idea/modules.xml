@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidTask-Sturtle.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidTask-Sturtle.iml" group="Sturtle" />
       <module fileurl="file://$PROJECT_DIR$/Sturtle.iml" filepath="$PROJECT_DIR$/Sturtle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Sturtle-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Sturtle-app.iml" group="Sturtle/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
